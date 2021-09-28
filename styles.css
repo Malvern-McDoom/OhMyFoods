@@ -1,0 +1,114 @@
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Shrikhand', cursive; */
+
+/* Global Styling */
+
+* {
+    box-sizing: border-box;
+}
+
+/* General Styling */
+
+:root {
+    --primary-color: #9356DC;
+    --secondary-color: #FF79DA;
+    --tertiary: #99E2D0;
+
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-accent: 'Shrikhand', cursive;
+}
+
+body {
+    font-family: var(--ff-primary);
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+/* Section Styling */
+
+/* header */ 
+
+.logo {
+    width: 50%;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 0.25rem;
+}
+
+.logo-desktop {
+    width: 50%;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 0.25rem;
+}
+
+
+
+
+@media screen and (min-width:420px) {
+    .logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .logo-desktop {
+        display: none;
+    }
+}
+
+/* Location */ 
+
+.map {
+    background: rgb(230, 226, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    border-top: 0.1rem solid rgba(187, 184, 184, 0.8);
+}
+
+.map p {
+    font-family: var(--ff-primary);
+    font-weight: 700;
+    color: rgb(66, 64, 64);
+}
+
+
+
+/* call to action */ 
+
+.action {
+    background: rgb(241, 239, 239);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 15rem;
+}
+
+.action h2 {
+    margin: 0;
+    margin-top: 1.5rem;
+    font-family: var(--ff-primary);
+}
+
+.action p {
+    width: 32ch;
+    color: grey;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.action button {
+    background: var(--secondary-color);
+    color: white;
+    height: 2.75rem;
+    width: 13rem;
+    border: 0;
+    border-radius: 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
