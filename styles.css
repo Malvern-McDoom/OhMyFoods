@@ -13,6 +13,7 @@ font-family: 'Shrikhand', cursive; */
     --primary-color: #9356DC;
     --secondary-color: #FF79DA;
     --tertiary: #99E2D0;
+    --gradient: linear-gradient(30deg, var(--secondary-color), var(--primary-color));
 
     --ff-primary: 'Roboto', sans-serif;
     --ff-accent: 'Shrikhand', cursive;
@@ -36,6 +37,10 @@ body {
     margin: 1rem auto;
     text-align: center;
     margin-bottom: 0.25rem;
+}
+
+.logo img {
+    width: 10.5rem;
 }
 
 .logo-desktop {
@@ -67,8 +72,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.75rem;
+    gap: 1rem;
     border-top: 0.1rem solid rgba(187, 184, 184, 0.8);
+    height: 2.75rem;
 }
 
 .map p {
@@ -86,13 +92,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 15rem;
+    height: 18rem;
 }
 
 .action h2 {
-    margin: 0;
-    margin-top: 1.5rem;
+    margin: 1.5rem 0;
     font-family: var(--ff-primary);
+    margin-top: 2.25rem;
 }
 
 .action p {
@@ -103,7 +109,11 @@ body {
 }
 
 .action button {
-    background: var(--secondary-color);
+    background-image: var(--gradient);
+    /* filter: drop-shadow(1.25rem, 0.5rem, 0.5rem, 
+    rgba(233, 228, 228, 0.8)); */
+    box-shadow: 2px 4px 2px rgba(218, 213, 213, 0.8);
+    cursor: pointer;
     color: white;
     height: 2.75rem;
     width: 13rem;
@@ -111,4 +121,230 @@ body {
     border-radius: 1.5rem;
     font-size: 0.8rem;
     font-weight: 700;
+    margin: 1.5rem 0;
+}
+
+/* info section */
+
+.info {
+    width: 90%;
+    margin: 0 auto;
+    position: relative; 
+    height: 24rem;
+}
+
+.info h2 {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    height: 18rem;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    background: rgb(241, 239, 239);
+    border: 1px solid rgba(206, 203, 203, 0.8);
+    border-radius: 1rem;
+    box-shadow: 2px 4px 2px rgba(235, 230, 230, 0.8);
+    margin-bottom: 1.5rem;
+    height: 4.5rem;
+}
+
+.card button {
+    border-radius: 50%;
+    color: white;
+    background: var(--primary-color);
+    border: 0;
+    position: absolute; 
+    left: -2%;
+}
+
+.card i {
+    margin-left: 8%;
+    margin-right: 5%;
+    color: rgb(145, 141, 141);
+}
+
+.card p {
+    font-weight: 700;
+    margin-left: 5%;
+}
+
+.card .position {
+    margin-left: 7%;
+}
+
+.card .position-2 {
+    margin-left: 5.5%;
+}
+
+/* Tablet / Desktop view */
+
+
+
+/* Menu Links */ 
+
+.menu-link {
+    background: rgb(241, 239, 239);
+    min-height: 74rem;
+    position: relative;
+}
+
+.menu-link h2 {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 3.5rem;
+    padding-bottom: 1rem;
+    
+}
+
+.grid-container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.grid-container a {
+    text-decoration: none;
+}
+
+.menu-card {
+    height: 14.5rem;
+    width: 100%;
+    background: white;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem lightgrey;
+}
+
+.fit {
+    object-fit: cover;
+    height: 70%;
+    width: 100%;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.btn {
+    width: 4.75rem;
+    height: 1.75rem;
+    background-color: var(--tertiary);
+    border: 0;
+    color: green;
+    font-weight: bold;
+    position: absolute;
+    left: 70%;
+    top: 10%;
+}
+
+.btn-2 {
+    width: 4.75rem;
+    height: 1.75rem;
+    background-color: var(--tertiary);
+    border: 0;
+    color: green;
+    font-weight: bold;
+    position: absolute;
+    left: 70%;
+    top: 31%;
+}
+
+
+.grid-container .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5%;
+}
+
+
+.menu-card .flex p {
+    width: 16ch;
+    color: black;
+    font-weight: 700;
+}
+
+.menu-card .flex .char-1 {
+    width: 18ch;
+    color: black;
+    font-weight: 700;
+}
+
+
+.menu-card .flex .char-2 {
+    width: 9ch;
+    color: black;
+    font-weight: 700;
+}
+
+
+.menu-card .flex .char-3 {
+    width: 11ch;
+    color: black;
+    font-weight: 700;
+}
+
+
+.menu-card .flex span {
+    color: grey;
+    font-weight: 400;
+}
+
+.menu-card .flex i {
+    color: rgba(107, 105, 105, 0.8);
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+/* Footer */ 
+
+footer {
+    background: rgb(15, 15, 15); 
+    height: 12rem;
+}
+
+footer h4 {
+    color:white;
+    font-family: var(--ff-accent);
+    font-size: 1rem;
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 0.65rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-nav ul {
+    text-decoration: none;
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-nav ul li {
+    list-style: none;
+    color: white;
+    font-size: 0.9rem;
+   /* margin: 2% 0; */
+}
+
+.footer-nav ul .display {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 0%;
+}
+
+.footer-nav ul .spacing {
+    margin-bottom: 3%;
+}
+
+.footer-nav ul .align i {
+    padding-right: 0.4rem;
 }
