@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oh My Food</title>
 
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./CSS/menuA.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,24 +18,124 @@
 </head>
 <body>
     <!--Logo-->
-    <header></header>
+    <header>
+        <div class="logo">
+            <a href="./index.html"><i class="fas fa-arrow-left"></i></a>
+            <img src="./assets/ohmyfood@2x.svg" alt="logo"></div>
+        <div class="logo-desktop">
+            <i class="fas fa-arrow-left"></i>
+            <img src="./assets/ohmyfood.png" alt="logo"></div>
+    </header>
     <!--Image-->
-    <div></div>
+    <div class="bg-image">
+        <img src="./assets/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurants" class="fit">
+    </div>
     <main>
         <!--Title-->
-        <div></div>
+        <div class="title">
+            <p>The Full Palette</p>
+            <i class="far fa-heart"></i>
+        </div>
         <!--Flex-container-->
-        <div>
+        <div class="grid-container">
             <!--Menu items 1-->
-            <section></section>
+            <div class="wrapper">
+                <p>ENTREES</p>
+                <div class="menu-card">
+                    <h5>Escargot</h5>
+                    <div class="flex">
+                        <p>With southern French spices</p>
+                        <span>25&#8364;</span>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <h5>Duck Fole Gras</h5>
+                    <div class="flex">
+                        <p>with black truffle shavings</p>
+                        <span>35&#8364;</span>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <h5>Fried egg</h5>
+                    <div class="flex">
+                        <p>with black truffle shavings</p>
+                        <span>20&#8364;</span>
+                    </div>
+                </div>
+            </div>
             <!--Menu items 2-->
-            <section></section>
+            <div class="wrapper">
+                <p>MAIN DISH</p>
+                <div class="menu-card">
+                    <h5>Herb-Encrusted Sreak</h5>
+                    <div class="flex">
+                        <p>With delicately sliced and seasoned veg...</p>
+                        <span>40&#8364;</span>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <h5>Ox Tail Shepard's Pie</h5>
+                    <div class="flex">
+                        <p>with black truffle and pureed parsnips</p>
+                        <span>35&#8364;</span>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <h5>Filet of Sole</h5>
+                    <div class="flex">
+                        <p>with citrus dressing</p>
+                        <span>44&#8364;</span>
+                    </div>
+                </div>
+            </div>
             <!--Menu items 3-->
-            <section></section>
+            <div class="wrapper">
+                <p>DESSERTS</p>
+                <div class="menu-card">
+                    <h5>Paris-Brest</h5>
+                    <div class="flex">
+                        <p>Revisted</p>
+                        <span>18&#8364;</span>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <h5>Chocolate Macaroons</h5>
+                    <div class="flex">
+                        <p>With vanilla ice cream</p>
+                        <span>22&#8364;</span>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <h5>Chocolate Mousse</h5>
+                    <div class="flex">
+                        <p>with spices and black truffle</p>
+                        <span>23&#8364;</span>
+                    </div>
+                </div>
+            </div>
         </div>
         <!--Order Button-->
-        <button></button>
+        <div class="btn">
+            <button>Order</button>
+        </div>
+        
+        <footer>
+            <h4>ohmyfood</h4>
+            <nav class="footer-nav">
+                <ul>
+                    <li class="display align">
+                        <i class="fas fa-utensils"></i>
+                        <p>Suggest a restaurants</p>
+                    </li>
+                    <li class="display">
+                        <i class="fas fa-hands-helping"></i>
+                        <p>Become a partner</p>
+                    </li>
+                    <li class="spacing">Legal</li>
+                    <li class="spacing">Contact</li>
+                </ul>
+            </nav>
+        </footer>
     </main>
-    <footer></footer>
 </body>
 </html>
