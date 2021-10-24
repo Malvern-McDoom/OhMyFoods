@@ -65,6 +65,7 @@ body {
 
 .logo-desktop i {
     font-size: 2rem;
+    color: #353535;
 }
 
 
@@ -101,7 +102,7 @@ body {
 
 main {
     background: var(--bg-color);
-    height: 70rem;
+    height: 63.5rem;
     position: absolute;
     width: 100%;
     top: 40%;
@@ -126,9 +127,15 @@ main {
 }
 
 .title i {
-    color: #787878;
+    color: rgba(197, 190, 190, 0.8);
     cursor: pointer;
     font-size: 1.25rem;
+    text-shadow: 0 0 3px #000;
+    transition: color 0.5s ease-in-out;
+}
+
+.title i:hover {
+    color: var(--primary-color);
 }
 
 
@@ -137,6 +144,7 @@ main {
 .grid-container {
     width: 90%;
     margin: 0 auto;
+    display: grid;
 }
 
 .wrapper p {
@@ -152,10 +160,20 @@ main {
     border-radius: 1rem;
     box-shadow: 0.2rem 0.2rem 0.2rem lightgrey;
     padding: 0 0.5rem; 
-    animation: fadein linear 2s;
+    animation: fadein 1s ease-in 1s;
+   /* animation-fill-mode: forwards; */
+    position: relative;
+    
 }
 
-.wrapper .menu-card:nth-child(2) {
+@keyframes hidden {
+    to {
+        visibility: hidden;
+    }
+} 
+
+
+ .wrapper .menu-card:nth-child(2) {
     animation-delay: 0.2s;
 }
 
@@ -177,12 +195,20 @@ main {
 
 .wrapper .menu-card:nth-child(7) {
     animation-delay: 1.2s;
-}
+} 
 
 @keyframes fadein {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+    0% {opacity: 0%;
+    }
+    50% {opacity: 50%;
+         transform: translateY(-1rem);
+    }
+    100% {visibility: 100%;
+          transform: translateY(0rem);
+    }
 }
+
+
 
 .menu-card h5 {
     margin: 0;
@@ -205,12 +231,33 @@ main {
     font-weight: 900;
 }
 
+.flex span:hover::after {
+    content: "";
+    background: var(--tertiary);
+    height: 100%;
+    width: 15%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+}
+
+.menu-card .checkbox {
+    background: var(--tertiary);
+    height: 100%;
+    width: 20%;
+    display: block;
+}
+
 
 .btn {
     width: 50%; 
     margin: 0 auto;
     padding-top: 1rem;
     padding-bottom: 4rem;
+    max-width: 250px;
 }
 
 .btn button {
@@ -229,6 +276,11 @@ main {
     margin-left: 1rem;
 }
 
+.btn button:hover {
+    opacity: 0.8;
+    box-shadow: 3px 5px 3px rgba(195, 195, 195, 0.8);
+}
+
 /* responsive view */ 
 
 @media screen and (min-width:420px) {
@@ -237,13 +289,21 @@ main {
     }
 
     .grid-container {
-        width: 70%;
+        width: 80%;
     }
 
     .btn {
         width: 30%;
         display: grid;
         margin: auto;
+    } 
+}
+
+@media screen and (min-width:768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1em;
+        row-gap: 1em;
     }
 }
 
