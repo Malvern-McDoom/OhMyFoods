@@ -165,7 +165,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 18rem;
+    height: 17rem;
 }
 
 .action h2 {
@@ -178,13 +178,12 @@ body {
     width: 32ch;
     color: #9b9b9b;
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.75rem;
 }
 
 .action button {
     background-image: var(--gradient);
-    /* filter: drop-shadow(1.25rem, 0.5rem, 0.5rem, 
-    rgba(233, 228, 228, 0.8)); */
+    
     box-shadow: 2px 4px 2px rgba(218, 213, 213, 0.8);
     cursor: pointer;
     color: white;
@@ -194,13 +193,14 @@ body {
     border-radius: 1.5rem;
     font-size: 0.8rem;
     font-weight: 700;
-    margin: 1.5rem 0;
+    margin: 1rem 0;
     transition: opacity 0.4s, box-shadow 0.4s;
 }
 
 .action button:hover {
     opacity: 0.8;
     box-shadow: 3px 5px 3px rgba(195, 195, 195, 0.8);
+    transform: scale(1.1);
 }
 
 /* Desktop view */ 
@@ -237,10 +237,19 @@ body {
     align-items: center;
     background: var(--bg-color);
     border: 1px solid rgba(206, 203, 203, 0.8);
-    border-radius: 1rem;
-    box-shadow: 2px 4px 2px rgba(235, 230, 230, 0.8);
+    border-radius: 30px;
+    box-shadow: 2px 6px 2px rgba(235, 230, 230, 0.8);
     margin-bottom: 1.5rem;
     height: 4.5rem;
+    border: 0;
+}
+
+.card:hover i{
+    color: var(--primary-color);
+}
+
+.card:hover {
+    background-color: rgba(147, 86, 220, 0.2);
 }
 
 .card button {
@@ -296,7 +305,7 @@ body {
 
 .menu-link {
     background: var(--bg-color);
-    min-height: 74rem;
+    min-height: 72rem;
     position: relative;
 }
 
@@ -402,7 +411,7 @@ body {
 }
 
 .menu-card .flex i {
-    color: white ;
+    color: white;
     outline: rgba(197, 190, 190, 0.8);
     cursor: pointer;
     font-size: 1.25rem;
@@ -526,9 +535,14 @@ footer h4 {
     padding-right: 0.4rem;
 }
 
+.footer-nav ul a {
+    text-decoration: none;
+    color: white;
+}
+
 /* Desktop */ 
 
-@media screen and (min-width:770px) {
+@media screen and (min-width:768px) {
     .footer-nav ul .spacing {
         margin-bottom: 1%;
     }

@@ -107,7 +107,7 @@ body {
 
 .fit {
     object-fit: cover;
-    height: 100%;
+    height: 16rem;
     width: 100%;
 }
 
@@ -115,7 +115,7 @@ body {
 
 main {
     background: var(--bg-color);
-    height: 77em;
+    height: 81.5em;
     position: absolute;
     width: 100%;
     top: 35%;
@@ -316,6 +316,10 @@ main {
     flex-direction: column;
 }
 
+/*.menu-card .flex .wrap {
+    width: 20ch;
+} */
+
 .flex p {
     margin: 0;
     line-height: 1.5rem;
@@ -483,7 +487,3 @@ footer h4 {
         margin-bottom: 1%;
     }
 }
-
-
-
-

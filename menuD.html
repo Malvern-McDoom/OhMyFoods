@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oh My Food</title>
 
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./CSS/menuA.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,25 +18,151 @@
 </head>
 <body>
     <!--Logo-->
-    <header></header>
+    <header>
+        <div class="logo">
+            <a href="./index.html"><i class="fas fa-arrow-left"></i></a>
+            <img src="./assets/ohmyfood@2x.svg" alt="logo"></div>
+        <div class="logo-desktop">
+            <a href="./index.html"><i class="fas fa-arrow-left"></i></a>
+            <img src="./assets/ohmyfood.png" alt="logo"></div>
+    </header>
     <!--Image-->
-    <div></div>
+    <div class="bg-image">
+        <img src="./assets/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Restaurants" class="fit">
+    </div>
     <main>
         <!--Title-->
-        <div></div>
+        <div class="title">
+            <p>Le Gourmand</p>
+            <i class="fas fa-heart"></i>
+        </div>
         <!--Flex-container-->
-        <div>
+        <div class="grid-container">
             <!--Menu items 1-->
-            <section></section>
+            <div class="wrapper">
+                <p class="underline">ENTREES</p>
+                <div class="menu-card">
+                    <div class="flex">
+                        <h5>Tuna Carpaccio</h5>
+                        <p>seasoned with yuzu</p>
+                    </div>
+                    <span>25&#8364;</span>
+                    <div class="box">
+                        <div class="checkmark"><i class="fas fa-check"></i></div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="flex">
+                        <h5>Crunchy Lobster Croquets</h5>
+                        <p>with seasonal vegetables</p>
+                    </div>
+                    <span>35&#8364;</span>
+                    <div class="box">
+                        <div class="checkmark"><i class="fas fa-check"></i></div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="flex">
+                        <h5>Mushroom soup</h5>
+                        <p>with truffles</p>
+                    </div>
+                    <span>20&#8364;</span>
+                    <div class="box">
+                        <div class="checkmark"><i class="fas fa-check"></i></div>
+                    </div>
+                </div>
+            </div>
             <!--Menu items 2-->
-            <section></section>
+            <div class="wrapper">
+                <p class="underline">MAIN DISH</p>
+                <div class="menu-card">
+                    <div class="flex">
+                        <h5>Roast Chicken with Provincal Herbs</h5>
+                        <p>with truffle cream</p>
+                    </div>
+                    <span>40&#8364;</span>
+                    <div class="box">
+                        <div class="checkmark"><i class="fas fa-check"></i></div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="flex">
+                        <h5>Roasted Lobster</h5>
+                        <p>with seasonal vegetables</p>
+                    </div>
+                    <span>35&#8364;</span>
+                    <div class="box">
+                        <div class="checkmark"><i class="fas fa-check"></i></div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="flex">
+                        <h5>Angust Beef Ribs</h5>
+                        <p>with mashed parships</p>
+                    </div>
+                    <span>44&#8364;</span>
+                    <div class="box">
+                        <div class="checkmark"><i class="fas fa-check"></i></div>
+                    </div>
+                </div>
+            </div>
             <!--Menu items 3-->
-            <section></section>
+            <div class="wrapper">
+                <p class="underline">DESSERTS</p>
+                <div class="menu-card">
+                    <div class="flex">
+                        <h5>Assorted Dessert Plate</h5>
+                        <p>Chef's choice</p>
+                    </div>
+                    <span>18&#8364;</span>
+                    <div class="box">
+                        <div class="checkmark"><i class="fas fa-check"></i></div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="flex">
+                        <h5>Creme brulee</h5>
+                        <p>Revisted</p>
+                    </div>
+                    <span>22&#8364;</span>
+                    <div class="box">
+                        <div class="checkmark"><i class="fas fa-check"></i></div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="flex">
+                        <h5>Tiramisu</h5>
+                        <p>with hazelnuts</p>
+                    </div>
+                    <span>23&#8364;</span>
+                    <div class="box">
+                        <div class="checkmark"><i class="fas fa-check"></i></div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!--Order Button-->
-        <button></button>
+        <div class="btn">
+            <button>Order</button>
+        </div>
+        
+        <footer>
+            <h4>ohmyfood</h4>
+            <nav class="footer-nav">
+                <ul>
+                    <li class="display align">
+                        <i class="fas fa-utensils"></i>
+                        <p>Suggest a restaurants</p>
+                    </li>
+                    <li class="display">
+                        <i class="fas fa-hands-helping"></i>
+                        <p>Become a partner</p>
+                    </li>
+                    <li class="spacing">Legal</li>
+                    <li class="spacing"><a href="mailto:ohmyfood@google.com?subject=MailfromourWebsite">Contact</a></li>
+                </ul>
+            </nav>
+        </footer>
     </main>
-    <footer></footer>
-    
 </body>
 </html>
